@@ -11,11 +11,15 @@
 
 (function() {
 
-    // to get the value of an input: document.getElementById("element-id").value
+    var num = document.getElementById("numbers").value; //Aller chercher les ch. affiches
+    var num2 = numbers.split(",").map(Number); 
+    //Retirer la , et les faire considerer comme chiffres
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+    num2.sort()
+
+    console.log();
 
     });
 
