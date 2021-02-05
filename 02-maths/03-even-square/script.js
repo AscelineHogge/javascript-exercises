@@ -13,7 +13,7 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        for (let i = 1; i < 22; i++) {
+        for (let i = 1; i > 22; i++) {
             console.log(Math.pow(i, 21)); 
         }
 

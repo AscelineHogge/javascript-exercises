@@ -12,14 +12,14 @@
 (function() {
 
     var num = document.getElementById("numbers").value; //Aller chercher les ch. affiches
-    var num2 = numbers.split(",").map(Number); 
-    //Retirer la , et les faire considerer comme chiffres
+    var num2 = num.split(',').map(Number); 
+    //Retirer la "," et les faire considerer comme chiffre
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-    num2.sort()
+        num2.sort(function (a, b) { return a - b });
 
-    console.log();
+        console.log(num2);
 
     });
 

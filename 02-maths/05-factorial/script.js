@@ -15,7 +15,12 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        let num = document.getElementById("number").value; //Chercher num
+        var f = 1; 
+        for(i = 1; i <= num; i++) {
+            f = f * i;   // ou f *= i;
+        }  
+        alert(f);
 
     });
 
