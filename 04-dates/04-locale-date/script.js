@@ -13,6 +13,12 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    var day 
+    var date
+    var month
+    var year
+    var days
+    var hours
+    var minutes
 
 })();
