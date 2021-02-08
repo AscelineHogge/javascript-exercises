@@ -11,14 +11,13 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var today = new Date();
+    var day = today.toLocaleDateString('en-EN', { weekday: 'long' });
+    var date = today.getDate();
+    var month = today.toLocaleDateString('en-EN', { month: 'long' });
+    var year = today.getFullYear();
+    var hour = today.getHours();
+    var minutes = today.getMinutes();
 
-    var day 
-    var date
-    var month
-    var year
-    var days
-    var hours
-    var minutes
-
+    document.getElementById("target").innerHTML = `${day} ${date} ${month} ${year}, ${hour}h${minutes}`;
 })();
