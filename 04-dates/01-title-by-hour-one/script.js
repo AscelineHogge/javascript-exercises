@@ -15,8 +15,10 @@
     var hour = d.getHours();
 
     if (hour <= 18)
-        document.getElementById("target").innerHTML = "Hello!";
+        document.getElementById("target").innerHTML = "Hello!"; 
+        //Si hour <= a 18h, il affiche "Hello"
     
     else
         document.getElementById("target").innerHTML = "Good evening!";
+        //Si hour > a 18h, il affiche "Good evening"
 })();

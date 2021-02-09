@@ -20,4 +20,6 @@
     else
         document.getElementById("target").innerHTML = "Good evening!";
 
+    //Pareil que le precedent exercice
+
 })();

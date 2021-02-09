@@ -12,9 +12,12 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function () {
-        let color = '#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6);
-
+        let color = '#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6); 
+            //Couleur aleatoire
+        
         document.body.style.background = color;
     });
+
+
 
 })();

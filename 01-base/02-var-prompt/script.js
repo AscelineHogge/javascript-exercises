@@ -10,6 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-    var person = prompt("Please enter your name");
-    alert(`Hello ${person} !`);
+    var person = prompt("Please enter your name"); //C'est la phrase questionnante
+    alert(`Hello ${person}!`);
 })();

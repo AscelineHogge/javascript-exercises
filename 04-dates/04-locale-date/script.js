@@ -12,12 +12,14 @@
 (function() {
 
     var today = new Date();
-    var day = today.toLocaleDateString('en-EN', { weekday: 'long' });
-    var date = today.getDate();
+    var day = today.toLocaleDateString('en-EN', { weekday: 'long' }); 
+    //toLocaleDateString A String, représentant la date sous forme de chaîne
+    var date = today.getDate(); //renvoie la date spécifiée en fonction de l'heure locale.
     var month = today.toLocaleDateString('en-EN', { month: 'long' });
     var year = today.getFullYear();
     var hour = today.getHours();
     var minutes = today.getMinutes();
 
     document.getElementById("target").innerHTML = `${day} ${date} ${month} ${year}, ${hour}h${minutes}`;
+    //Format voulu pour les valeurs
 })();

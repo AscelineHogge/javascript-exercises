@@ -13,15 +13,15 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        var today = new Date();
-        var todayDay = today.getDate();
-        var todayMonth = today.getMonth() + 1;
-        var day = document.getElementById("dob-day").value;
+        var today = new Date(); //Date du jour
+        var todayDay = today.getDate(); //Jour de la semaine (0 - 6)
+        var todayMonth = today.getMonth() + 1; //+1 permet de ne pas commencer par zero
+        var day = document.getElementById("dob-day").value; //Chercher les valeurs dans HTML
         var month = document.getElementById("dob-month").value;
         var year = document.getElementById("dob-year").value;
-        var age = today.getFullYear() - year;
+        var age = today.getFullYear() - year; //Calculer annee
                 
-        if (day <= todayDay && month <= todayMonth)
+        if (day <= todayDay && month <= todayMonth) 
         {
             alert(age);
         }

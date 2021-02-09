@@ -17,7 +17,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        num2.sort(function (a, b) { return a - b });
+        num2.sort(function (a, b) { return a - b }); // a - b Permet l'ordre croissant
 
         console.log(num2);
 
