@@ -25,10 +25,10 @@
     ];
 
     document.getElementById("run").addEventListener("click", function () {
-        fruits.shift()
-        fruits.pop()
-        fruits.unshift('kiwi')
-        fruits.push('banana')
+        fruits.shift() //Supprimer le premier element
+        fruits.pop() //Supprimer le dernier element
+        fruits.unshift('kiwi') //Rajouter kiwi comme premier element
+        fruits.push('banana') //Rajouter banana comme dernier element
         console.log(fruits)
     });
 
