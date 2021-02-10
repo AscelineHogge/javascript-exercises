@@ -27,7 +27,7 @@
     ];
 
     document.getElementById("run").addEventListener("click", function () {
-        fruits.forEach(element => console.log(element));
+        fruits.forEach(element => console.log(element)); //Affiche les fr. en liste
     });
 
 

@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     const people = [
         {
@@ -89,6 +89,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        people.forEach(function (items, index, people) {
+            console.log(people[index].firstname)
+            //index permet d'afficher l'element voulu
+        });
+    });
 
 })();

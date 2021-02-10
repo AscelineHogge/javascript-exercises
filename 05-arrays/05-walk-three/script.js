@@ -40,7 +40,9 @@
     ];
 
     document.getElementById("run").addEventListener("click", function () {
-        people.forEach(firstname => console.log(firstname));
+        people.forEach(function (items, index, people) {
+            console.log(people[index].firstname)
+            //index permet d'afficher l'element voulu
+        });
     });
-
 })();
