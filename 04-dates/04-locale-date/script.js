@@ -9,10 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var today = new Date();
-    var day = today.toLocaleDateString('en-EN', { weekday: 'long' }); 
+    var day = today.toLocaleDateString('en-EN', { weekday: 'long' });
     //toLocaleDateString A String, représentant la date sous forme de chaîne
     var date = today.getDate(); //renvoie la date spécifiée en fonction de l'heure locale.
     var month = today.toLocaleDateString('en-EN', { month: 'long' });
