@@ -90,10 +90,8 @@
     ];
 
     document.getElementById("run").addEventListener("click", function () {
-        people.forEach(function (items, index, people) {
-            console.log(people[index].firstname)
-            //index permet d'afficher l'element voulu
-        });
+        var result = people.filter(people => people.age > 18);
+        console.log(result);
+        //filter : creates a new array /!\ 
     });
-
 })();
