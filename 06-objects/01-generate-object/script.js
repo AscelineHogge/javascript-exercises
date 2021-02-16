@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const me = {
+        lastname: 'Hogge',
+        firstname: 'Asceline',
+        age: '28',
+        city: 'Petit-Rechain',
+        country: 'Belgium',
+    }
+    //"const" permet de créer une constante nommée accessible uniquement en lecture
+
+    document.getElementById('run').addEventListener('click', function () {
+        console.log(me);
+    });
 })();
