@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+    var image = document.createElement('img');
+    image.src = document.querySelector('#source').getAttribute('data-image');
+    document.querySelector('#target').appendChild(image);
+    document.querySelector('#source').remove();
 })();
+
+/*
+var mySource = document.getElementById("source").getAttribute("data-image");
+var newImage = document.createElement("img");
+
+newImage.src = mySource;
+
+document.getElementById("target").appendChild(newImage);
+document.getElementById("source").remove();
+*/
