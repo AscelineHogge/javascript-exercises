@@ -9,8 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    document.querySelector('#target').innerHTML = 'owned';
+
+    /* querySelector() de l'interface Document retourne le premier Element 
+    dans le document correspondant au sélecteur - ou groupe de sélecteurs - spécifié(s), ou
+    null si aucune correspondance n'est trouvée.*/
 
 })();
