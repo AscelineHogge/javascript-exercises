@@ -9,8 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+    document.getElementById('run').addEventListener('click', function () {
 
-    // your code here
+        if (document.getElementById("pass-one").value !== document.getElementById("pass-two").value) {
+            document.querySelector('#pass-one').style.border = "2px solid red";
+            document.querySelector('#pass-two').style.border = "2px solid red";
+        }
+        /* "!==" L'opérateur d'inégalité stricte renvoie true si les opérandes 
+        sont de types différents ou ne sont pas égaux. */
+        //If pas bon, ce sera rouge
 
+        else {
+            document.querySelector('#pass-one').style.border = "1px solid black";
+            document.querySelector('#pass-two').style.border = "1px solid black";
+        }
+        //If bon, noir
+    });
 })();
+
+//https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page/21727518
+

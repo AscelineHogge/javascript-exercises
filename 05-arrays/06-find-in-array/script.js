@@ -91,6 +91,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
         people.forEach(function (people, index, people) {
+            //"forEach()" permet d'exécuter une fonction donnée sur chaque élément du tableau
             if (people[index].firstname == "Jean" && people[index].lastname == "Dupont")
                 //if (!Array.prototype['forEach'].value)
                 console.log(people[index].email)
