@@ -16,6 +16,7 @@
     for (var i = 0; i < myTarget.length; i++) {
         myTarget[i].innerHTML = "owned";
     }
+
     /* Une boucle for répète des instructions jusqu'à ce 
     qu'une condition donnée ne soit plus vérifiée */
 

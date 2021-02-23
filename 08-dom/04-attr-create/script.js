@@ -15,13 +15,3 @@
     document.querySelector('#target').appendChild(image);
     document.querySelector('#source').remove();
 })();
-
-/*
-var mySource = document.getElementById("source").getAttribute("data-image");
-var newImage = document.createElement("img");
-
-newImage.src = mySource;
-
-document.getElementById("target").appendChild(newImage);
-document.getElementById("source").remove();
-*/

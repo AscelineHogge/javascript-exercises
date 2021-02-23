@@ -13,16 +13,16 @@
     document.getElementById('run').addEventListener('click', function () {
 
         if (document.getElementById("pass-one").value !== document.getElementById("pass-two").value) {
-            document.querySelector('#pass-one').style.border = "2px solid red";
-            document.querySelector('#pass-two').style.border = "2px solid red";
+            document.querySelector('#pass-one').style.border = "red";
+            document.querySelector('#pass-two').style.border = "red";
         }
         /* "!==" L'opérateur d'inégalité stricte renvoie true si les opérandes 
         sont de types différents ou ne sont pas égaux. */
         //If pas bon, ce sera rouge
 
         else {
-            document.querySelector('#pass-one').style.border = "1px solid black";
-            document.querySelector('#pass-two').style.border = "1px solid black";
+            document.querySelector('#pass-one').style.border = "black";
+            document.querySelector('#pass-two').style.border = "black";
         }
         //If bon, noir
     });
