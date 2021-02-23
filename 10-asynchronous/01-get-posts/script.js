@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    //callback - c'est une fonction de rappel
+
+    document.getElementById("run").addEventListener("click", function () {
+        window.lib.getPosts(function (error, array) {
+            if (error) {
+                console.log(error);
+            }
+            else {
+                console.log(array);
+            }
+        })
+    });
 })();
+
