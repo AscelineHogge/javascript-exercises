@@ -12,9 +12,8 @@
 (() => {
 
     document.getElementById('run').addEventListener('click', function () {
-        const promise = window.lib.getPosts((resolve, reject) => {
-            resolve(value);
-            reject();
+        window.lib.getPersons(() => {
+
         });
 
         promise.then((value) => {
@@ -26,11 +25,9 @@
         });
     });
 
-    /*document.getElementById('run').addEventListener('click', () => {
-        window.lib.getPosts()
-            .then(data => {
-                console.log(data)
-            })
-            .catch(error => console.log('There is an error', error))
-    })*/
+    /* document.getElementById('run').addEventListener('click', () => {
+        window.lib.getPersons()
+            .then( data => console.log(data))
+            .catch( err => console.log(err));
+    }) */
 })();
