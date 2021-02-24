@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById('run').addEventListener('click', function () {
+        const promise = window.lib.getPosts((resolve, reject) => {
+            resolve(value);
+            reject();
+        });
+
+        promise.then((value) => {
+            console.log(value);
+        });
+
+        promise.catch((error) => {
+            console.log(error);
+        });
+    });
+
+    /*document.getElementById('run').addEventListener('click', () => {
+        window.lib.getPosts()
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => console.log('There is an error', error))
+    })*/
 })();

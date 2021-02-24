@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').addEventListener('click', function () {
+        const promise = window.lib.getPosts((resolve, reject) => {
+            resolve(value);
+            reject();
+        });
+
+        promise.then((value) => {
+            console.log(value);
+        });
+    });
 })();
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+
+/*
+document.getElementById('run').addEventListener('click', function () {
+        window.lib.getPosts().then(function getPosts(array) {
+            console.log(array);
+        });
+    });
+*/
