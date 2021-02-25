@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').addEventListener('click', function () {
+        async function get() {
+            const mala = await window.lib.getPosts();
+            return mala;
+            mala.forEach((posts) => {
+                async function get() {
+                    const lulu = await window.lib.getPosts();
+                    return lulu;
+                });
+        }
+        console.log(get())
+    });
 })();
