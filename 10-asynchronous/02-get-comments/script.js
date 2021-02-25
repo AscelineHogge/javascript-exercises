@@ -10,51 +10,39 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", function () {
-        window.lib.getPosts(function (error, array) {
-            if (error) {
-                console.log(error);
-            }
-            else {
-                console.log(array);
-                //On doit imbriquer les deux
-                resolve.forEach(function (element) {
-                    window.lib.getPosts(element.id, (error, array) => {
-                        if (error) {
-                            console.log(error);
-                        }
-                        else {
-                            console.log(element);
-                        }
-                    })
-                })
-            }
+    document.getElementById('run').addEventListener('click', function () {
+        window.lib.getPosts(function myPosts(error, array) {
+            console.error(error);
+
+            array.forEach(function myComments(post) {
+
+                window.lib.getComments(post.id, (err, comments) => {
+                    post.comments = comments;
+
+                });
+            });
+            console.log(array);
         });
     });
-
-    /* (() => {
-    document.getElementById("run").addEventListener("click", function () {
-        window.lib.getPosts(function (error, array) {
-            if (error) {
-                console.log(error);
-            }
-            else {
-                console.log(array);
-                //On doit imbriquer les deux
-                resolve.forEach(function (element) {
-                    window.lib.getPosts(element.id, (error, array) => {
-                        if (error) {
-                            console.log(error);
-                        }
-                        else {
-                            console.log(element);
-                        }
-                    })
-                })
-            }
-        });
-    });
-    */
-
-
 })();
+
+
+/* window.lib.getPosts(function (error, array) {
+            if (error) {
+                console.log(error);
+            }
+            else {
+                console.log(array);
+                //On doit imbriquer les deux
+                resolve.forEach(function (element) {
+                    window.lib.getPosts(element.id, (error, array) => {
+                        if (error) {
+                            console.log(error);
+                        }
+                        else {
+                            console.log(element);
+                        }
+                    })
+                })
+            }
+        }); */

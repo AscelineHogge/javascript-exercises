@@ -12,22 +12,15 @@
 (() => {
 
     document.getElementById('run').addEventListener('click', function () {
-        window.lib.getPersons(() => {
-
-        });
-
-        promise.then((value) => {
-            console.log(value);
-        });
-
-        promise.catch((error) => {
-            console.log(error);
-        });
-    });
-
-    /* document.getElementById('run').addEventListener('click', () => {
         window.lib.getPersons()
-            .then( data => console.log(data))
-            .catch( err => console.log(err));
-    }) */
+            //Il ne faut pas mettre de Promise avant ".then" ou ".catch" sinon pas defini !
+            // .then & .catch parce que error est permis
+            .then((value) => {
+                console.log(value);
+            })
+
+            .catch((error) => {
+                console.log(error);
+            })
+    });
 })();

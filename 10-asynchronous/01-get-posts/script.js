@@ -14,11 +14,12 @@
 
     document.getElementById("run").addEventListener("click", function () {
         window.lib.getPosts(function (error, array) {
+            //Creer une boucle pour deux parametres
             if (error) {
-                console.log(error);
+                console.log(error); //parametre error
             }
             else {
-                console.log(array);
+                console.log(array); //parametre array
             }
         })
     });

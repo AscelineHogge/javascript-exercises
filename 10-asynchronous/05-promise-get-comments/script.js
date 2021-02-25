@@ -11,9 +11,13 @@
 
 (() => {
     document.getElementById('run').addEventListener('click', () => {
-        window.lib.getPosts().then(data => {
+        window.lib.getPosts().then(data => { //.then quand pas d'erreur
             data.forEach(element => {
+                //data précise le type de données qui peuvent être stockées et manipulées dans un programme
+                //forEach() permet d'exécuter une fonction donnée sur chaque élément du tableau
+                //utilise "element" pour pouvoir utiliser element.id
                 window.lib.getComments(element.id).then(data => {
+                    //on imbrique getPosts et getComments
                     element.comments = data;
                     console.log(element)
                 })

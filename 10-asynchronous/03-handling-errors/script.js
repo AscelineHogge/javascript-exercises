@@ -12,11 +12,14 @@
 (() => {
     document.getElementById("run").addEventListener("click", function () {
         window.lib.getPersons(function (error, array) {
+            /* On utilise getPersons suivi d'une boucle et a plus ou moins une chance sur 
+                deux de générer une erreur */
+            //callblack effectue deux parametres
             if (error) {
-                console.error(error);
+                console.error(error); //error, utilise console.error() pour afficher getPersons
             }
             else {
-                console.log(array);
+                console.log(array); //array of people
             }
         })
     });
